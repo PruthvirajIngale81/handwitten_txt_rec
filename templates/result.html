@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Sofia&family=Yeseva+One&family=Roboto+Slab:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <title>HCR Recognition</title>
+    <link rel="icon" href="static/images/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="static/css/result.css" />
+  </head>
+
+  <body>
+    <section class="mainbox">
+      <nav class="navbar">
+        <div class="logo">
+          
+        </div>
+        <div class="mid">
+          <ul class="menu">
+            <li><a href="/">Home</a></li>
+          </ul>
+        </div>
+        <div></div>
+      </nav>
+      <div class="mainbox">
+        <div class="bg-im"></div>
+        <div class="content">
+          <p>Result :- <b>{{ prediction }} </b></p>
+          <img
+            id="pred-img"
+            src="{{ url_for('static', filename='out/predicted.png') }}"
+            alt="Prediction Image"
+          />
+        </div>
+      </div>  
+    </section>
+  </body>
+</html>

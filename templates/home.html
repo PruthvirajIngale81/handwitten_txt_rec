@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Sofia&family=Yeseva+One&display=swap"
+      rel="stylesheet"
+    />
+    <title>FarmBuddy AI</title>
+    <link rel="icon" href="static/images/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="static/css/index.css" />
+  </head>
+
+  <body>
+    <section class="mainbox">
+      <nav class="navbar">
+        <div class="logo">
+          <!-- <img src="static/images/logo.png" alt="" /> -->
+          
+        </div>
+        <div class="mid">
+          <ul class="menu">
+            <li><a href="/">Home</a></li>
+          </ul>
+        </div>
+        <div></div>
+      </nav>
+      <div class="bg-im"></div>
+      <div class="content">
+        <h1>Find out text in the image</h1>
+        <form
+          class="img-form"
+          method="POST"
+          enctype="multipart/form-data"
+          action="/"
+        >
+          <h2>Please Upload The Image</h2>
+          <input
+            required
+            accept="image/"
+            type="file"
+            name="file"
+            id="inputfile"
+            onchange="preview_image(event)"
+          />
+          <br />
+          <br />
+          <img id="img-preview" />
+          <button type="submit" class="Predict-btn">Predict</button>
+        </form>
+      </div>
+      <script type="text/javascript">
+        function preview_image(event) {
+          var reader = new FileReader();
+          reader.onload = function () {
+            var output = document.getElementById("img-preview");
+            output.src = reader.result;
+          };
+          reader.readAsDataURL(event.target.files[0]);
+        }
+      </script>
+    </section>
+  </body>
+</html>

@@ -34,18 +34,19 @@ python3 app.py
 # Docker way (ubantu):
 1. install docker:
 
-  1.1 update your machine:
+   * update your machine:
 
 
-```
-  sudo apt-get update
-```
-  1.2 install docker into machine:
+     ```
+       sudo apt-get update
+     ```
+
+  * install docker into machine:
 
 
-  ```
-    sudo apt-get install docker.io
-  ```
+     ```
+       sudo apt-get install docker.io
+     ```
 2. build docker image:
 
 
@@ -62,6 +63,8 @@ Hurry access your application using :
 
 
 ~ For local machine: `https://0.0.0.0:5000`
+
+
 ~ For remote host: `https://<ip_address>:5000`
 
 ### Happy shipping !

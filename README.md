@@ -41,7 +41,7 @@ python3 app.py
        sudo apt-get update
      ```
 
-  * install docker into machine:
+   * install docker into machine:
 
 
      ```

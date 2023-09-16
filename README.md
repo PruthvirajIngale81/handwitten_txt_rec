@@ -4,14 +4,14 @@ This repository contains code and resources for a Handwritten Text Recognition (
 
 ## Installation
 
-1. Clone the repository:
+ * Clone the repository:
 
    ```
-   git clone https://github.com/PruthvirajIngale81/handwitten_txt_rec.git
+     git clone https://github.com/PruthvirajIngale81/handwitten_txt_rec.git
    ```
 
    ```
-       cd handwitten_txt_rec
+     cd handwitten_txt_rec
    ```
 # Run locally (manual)   
 
@@ -31,14 +31,28 @@ python3 app.py
 
 `https://0.0.0.0:5000`
 
-# Docker way :
-1. build docker image:
+# Docker way (ubantu):
+1. install docker:
+
+  1.1 update your machine:
+
+
+```
+  sudo apt-get update
+```
+  1.2 install docker into machine:
+
+
+  ```
+    sudo apt-get install docker.io
+  ```
+2. build docker image:
 
 
 ```
 sudo docker build -t handwrittentxt:v1 .
 ```
-2. deploy you app into container and run application using:
+3. deploy you app into container and run application using:
 
 
 ```
@@ -49,3 +63,5 @@ Hurry access your application using :
 
 ~ For local machine: `https://0.0.0.0:5000`
 ~ For remote host: `https://<ip_address>:5000`
+
+### Happy shipping !
